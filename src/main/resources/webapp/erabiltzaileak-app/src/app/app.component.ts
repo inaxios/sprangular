@@ -7,10 +7,10 @@ import {ErabiltzaileService} from "./erabiltzaile/erabiltzaile-service.service";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.less']
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'BookStore';
+  title = 'Erabiltzaile CRUD gauza';
   erabiltzaileak: Erabiltzaile[];
 
   constructor(private router: Router, private erabiltzaileService: ErabiltzaileService) {
@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
     });
   }
 
-  addBook(): void {
+  addErabiltzaile(): void {
     this.router.navigate(['add-erabiltzaile'])
       .then((e) => {
         if (e) {

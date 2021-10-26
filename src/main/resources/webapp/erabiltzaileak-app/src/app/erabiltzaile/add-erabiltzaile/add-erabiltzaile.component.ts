@@ -18,8 +18,8 @@ export class AddErabiltzaileComponent implements OnInit {
   ngOnInit() {
     this.addForm = this.formBuilder.group({
       id: [],
-      title: ['', Validators.required],
-      author: ['', Validators.required]
+      name: ['', Validators.required],
+      email: ['', Validators.required]
     });
 
   }
